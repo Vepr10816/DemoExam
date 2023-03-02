@@ -1,0 +1,53 @@
+﻿<Window x:Class="lohovskayaProga.UserMainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lohovskayaProga"
+        mc:Ignorable="d"
+        Title="AMONIC Airlines Automation System" Height="450" Width="800" WindowStyle="ToolWindow"  WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="{x:Type DataGridRow}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding LogoutTime}" Value="{x:Null}">
+                    <Setter Property="Background" Value="Red" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.ColumnSpan="8">
+            <MenuItem Header="Exit" Name="ExitButton" Click="ExitButton_Click"/>
+        </Menu>
+        <Label Name="lbHello" Style="{StaticResource LabelStyle}" FontSize="15" HorizontalAlignment="Left" Grid.ColumnSpan="8" Grid.Row="1">Hi Aboba, Welcome to AMONIC Airlines.</Label>
+        <Label Name="lbTimeSpent" Style="{StaticResource LabelStyle}" FontSize="15" HorizontalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="2">Time spent on system : </Label>
+        <Label Name="lbNumCrashes" Style="{StaticResource LabelStyle}" FontSize="15" HorizontalAlignment="Center" Grid.Column="4" Grid.ColumnSpan="8" Grid.Row="2">Number of crashes: </Label>
+        <DataGrid Name="DGridSession" Grid.Row="3" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="8" Margin="10,10,10,10" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Date" Binding="{Binding Date, StringFormat={}{0:dd/MM/yyyy}}" Width="*" />
+                <DataGridTextColumn Header="Login Time" Binding="{Binding LoginTime}" Width="*"/>
+                <DataGridTextColumn Header="Logout Time" Binding="{Binding LogoutTime}" Width="*"/>
+                <DataGridTextColumn Header="Time spent on system" Binding="{Binding TimeSpentOnSystem}" Width="*"/>
+                <DataGridTextColumn Header="Unsuccessfull logout reason" Binding="{Binding UnsuccessfulLogoutReason}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+     </Grid>
+</Window>

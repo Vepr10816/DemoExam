@@ -1,0 +1,238 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "EntityFramework.ru/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "[6.2.0]"
+        },
+        "resource": {
+          "lib/net45/ru/EntityFramework.SqlServer.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/EntityFramework.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "EntityFramework.ru/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "[6.2.0]"
+        },
+        "resource": {
+          "lib/net45/ru/EntityFramework.SqlServer.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/EntityFramework.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "EntityFramework.ru/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "[6.2.0]"
+        },
+        "resource": {
+          "lib/net45/ru/EntityFramework.SqlServer.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/EntityFramework.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "EntityFramework.ru/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "[6.2.0]"
+        },
+        "resource": {
+          "lib/net45/ru/EntityFramework.SqlServer.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/EntityFramework.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EntityFramework/6.2.0": {
+      "sha512": "ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
+      "type": "package",
+      "path": "entityframework/6.2.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.transform",
+        "entityframework.6.2.0.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
+      ]
+    },
+    "EntityFramework.ru/6.2.0": {
+      "sha512": "DROBt5aaifpmnT9ALLJU98j6cdEqdaNEXFyhTWewM8ywUF+XLiu0ROQ4ZpwCfLWcGFJBNRhPf76maOIVfAauxQ==",
+      "type": "package",
+      "path": "entityframework.ru/6.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "entityframework.ru.6.2.0.nupkg.sha512",
+        "entityframework.ru.nuspec",
+        "lib/net40/ru/EntityFramework.SqlServer.resources.dll",
+        "lib/net40/ru/EntityFramework.SqlServer.xml",
+        "lib/net40/ru/EntityFramework.resources.dll",
+        "lib/net40/ru/EntityFramework.xml",
+        "lib/net45/ru/EntityFramework.SqlServer.resources.dll",
+        "lib/net45/ru/EntityFramework.SqlServer.xml",
+        "lib/net45/ru/EntityFramework.resources.dll",
+        "lib/net45/ru/EntityFramework.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "EntityFramework >= 6.2.0",
+      "EntityFramework.ru >= 6.2.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kruto\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\kruto\\OneDrive\\Desktop\\4 Course Pahom\\Сделал\\Сессия 1\\lohovskayaProga\\lohovskayaProga.csproj",
+      "projectName": "lohovskayaProga",
+      "projectPath": "C:\\Users\\kruto\\OneDrive\\Desktop\\4 Course Pahom\\Сделал\\Сессия 1\\lohovskayaProga\\lohovskayaProga.csproj",
+      "packagesPath": "C:\\Users\\kruto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kruto\\OneDrive\\Desktop\\4 Course Pahom\\Сделал\\Сессия 1\\lohovskayaProga\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\kruto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "EntityFramework": {
+            "target": "Package",
+            "version": "[6.2.0, )"
+          },
+          "EntityFramework.ru": {
+            "target": "Package",
+            "version": "[6.2.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

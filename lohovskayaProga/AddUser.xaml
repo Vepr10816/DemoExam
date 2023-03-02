@@ -1,0 +1,51 @@
+﻿<Window x:Class="lohovskayaProga.AddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lohovskayaProga"
+        mc:Ignorable="d"
+        Title="Add user" Height="450" Width="800" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Label Style="{StaticResource LabelStyle}" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1">Email address</Label>
+        <Label Style="{StaticResource LabelStyle}" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="3">First name</Label>
+        <Label Style="{StaticResource LabelStyle}" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="5">Last name</Label>
+        <Label Style="{StaticResource LabelStyle}" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="7">Office</Label>
+        <Label Style="{StaticResource LabelStyle}" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="9">Birthdate</Label>
+        <Label Style="{StaticResource LabelStyle}" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="11">Password</Label>
+        <TextBox Text="{Binding Email}" Style="{StaticResource TextBoxStyle}" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="2" Margin="0, 0, 0,0" Name="tbEmail"/>
+        <TextBox Text="{Binding FirstName}" Style="{StaticResource TextBoxStyle}" Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="2" Margin="0, 0, 0,0" Name="tbFirstName"/>
+        <TextBox Text="{Binding LastName}" Style="{StaticResource TextBoxStyle}" Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="2" Margin="0, 0, 0,0" Name="tbLastName"/>
+        <DatePicker SelectedDate="{Binding Birthdate}" Grid.Row="9" Grid.ColumnSpan="2" Grid.Column="2" FontSize="20" Foreground="#196AA6" FontFamily="Fonts/TeXGyreAdventor-Regular.ttf" Name="dpBirthdate"/>
+        <ComboBox SelectedItem="{Binding Office}" DisplayMemberPath="Title" Style="{StaticResource ComboBoxStyle}" Grid.Row="7" Grid.ColumnSpan="2" Grid.Column="2" Name="cbOffice"/>
+        <TextBox Text="{Binding Password}"  Name="tbPassword" Grid.Row="11" Grid.ColumnSpan="2" Grid.Column="2" FontSize="20"/>
+        <Button Name="SaveButton" Style="{StaticResource ButtonStyle}" Grid.Row="13" Grid.ColumnSpan="2" Grid.Column="1" Content="Save" Margin="80, 5, 110, 5" Click="SaveButton_Click"/>
+        <Button Name="CancelButton" Style="{StaticResource ButtonStyle}" Grid.Row="13" Grid.ColumnSpan="2" Grid.Column="3" Content="Cancel" Margin="0, 5, 190,5" Click="CancelButton_Click" />
+            
+    </Grid>
+</Window>
+    

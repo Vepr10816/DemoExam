@@ -1,0 +1,77 @@
+D:\C#\lohovskayaProga\lohovskayaProga\bin\Debug\lohovskayaProga.exe.config
+D:\C#\lohovskayaProga\lohovskayaProga\bin\Debug\lohovskayaProga.exe
+D:\C#\lohovskayaProga\lohovskayaProga\bin\Debug\lohovskayaProga.pdb
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.csprojAssemblyReference.cache
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\App.g.cs
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga_MarkupCompile.cache
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga_MarkupCompile.lref
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\App.baml
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\Styles.baml
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.g.resources
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.Properties.Resources.resources
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.csproj.GenerateResource.cache
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.csproj.CoreCompileInputs.cache
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.exe
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.pdb
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\LoginWindow.g.cs
+D:\C#\lohovskayaProga\lohovskayaProga\obj\Debug\LoginWindow.baml
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\bin\Debug\lohovskayaProga.exe.config
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\bin\Debug\lohovskayaProga.exe
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\bin\Debug\lohovskayaProga.pdb
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.csprojAssemblyReference.cache
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\AdminMainMenu.g.cs
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\LoginWindow.g.cs
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\App.g.cs
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga_MarkupCompile.cache
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga_MarkupCompile.lref
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\App.baml
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\LoginWindow.baml
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\Styles.baml
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\AdminMainMenu.baml
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.g.resources
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.Properties.Resources.resources
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.csproj.GenerateResource.cache
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.exe
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\lohovskayaProga.pdb
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\AddUser.g.cs
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\AddUser.baml
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\EditRole.g.cs
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\EditRole.baml
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\LogoutDetect.g.cs
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\UserMainMenu.g.cs
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\LogoutDetect.baml
+C:\Users\Дмитрий\Desktop\lohovskayaProga\lohovskayaProga\obj\Debug\UserMainMenu.baml
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\bin\Debug\lohovskayaProga.exe.config
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\bin\Debug\lohovskayaProga.exe
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\bin\Debug\lohovskayaProga.pdb
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\bin\Debug\EntityFramework.dll
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\lohovskayaProga.csprojAssemblyReference.cache
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\AddUser.g.cs
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\AdminMainMenu.g.cs
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\EditRole.g.cs
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\LoginWindow.g.cs
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\LogoutDetect.g.cs
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\UserMainMenu.g.cs
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\App.g.cs
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\lohovskayaProga_Content.g.cs
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\lohovskayaProga_MarkupCompile.cache
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\lohovskayaProga_MarkupCompile.lref
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\App.baml
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\AddUser.baml
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\AdminMainMenu.baml
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\EditRole.baml
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\LoginWindow.baml
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\LogoutDetect.baml
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\Styles.baml
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\UserMainMenu.baml
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\lohovskayaProga.g.resources
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\lohovskayaProga.Properties.Resources.resources
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\lohovskayaProga.csproj.GenerateResource.cache
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\lohovskayaProga.csproj.CoreCompileInputs.cache
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\lohovskayaProga.csproj.CopyComplete
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\lohovskayaProga.exe
+C:\Users\kruto\OneDrive\Desktop\4 Course Pahom\Сделал\Сессия 1\lohovskayaProga\obj\Debug\lohovskayaProga.pdb

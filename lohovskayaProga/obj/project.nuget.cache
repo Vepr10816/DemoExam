@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qAkTw3FaqPLHwc3NYyJSPA22UxRwCm6Uh+Y0NzSETA0QqxIXyJ78q8rc7ihWV1EBDmT3uwM4RzXQ7Ab0kgGIyQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kruto\\OneDrive\\Desktop\\4 Course Pahom\\Сделал\\Сессия 1\\lohovskayaProga\\lohovskayaProga.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kruto\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
+    "C:\\Users\\kruto\\.nuget\\packages\\entityframework.ru\\6.2.0\\entityframework.ru.6.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
