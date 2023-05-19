@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PYPtHWxjhkL6KwqqcFaY3o7xPfIw7FQGgsUkBJhjuUtJAMfGWeMdfKgk++NeZtphoIbi/Rh7HoI6/srOw2Is+Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kruto\\source\\repos\\Piter_Retail_Gas_Station\\Piter_Retail_Gas_Station\\Piter_Retail_Gas_Station.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kruto\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
+    "C:\\Users\\kruto\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
