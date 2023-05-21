@@ -1,0 +1,29 @@
+﻿<Window x:Class="Fabric_Desktop.CaphaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fabric_Desktop"
+        mc:Ignorable="d"
+        Title="CaphaWindow" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <WrapPanel HorizontalAlignment="Center" Height="150"  VerticalAlignment="Center" Width="200" Orientation="Vertical">
+            <Label Content="Повторите надпись на картинке" Width="200"/>
+            <WrapPanel Orientation="Horizontal" Height="40">
+                <TextBlock TextDecorations="Strikethrough" Width="30" Height="40" Name="tblFirstLetter" Foreground="#FF498C51">1</TextBlock>
+                    <WrapPanel Orientation="Vertical" Height="30">
+                    <Label/>
+                    <TextBlock TextDecorations="Strikethrough" Width="30" Height="40" Name="tblSecondLetter" Foreground="#FF498C51">2</TextBlock>
+                </WrapPanel>
+                <TextBlock TextDecorations="Strikethrough" Width="30" Height="40" Name="tblThirdLetter" Foreground="#FF498C51">3</TextBlock>
+                <WrapPanel Orientation="Vertical" Height="30">
+                    <Label/>
+                    <TextBlock TextDecorations="Strikethrough" Width="30" Height="40" Name="tblFourthLetter" Foreground="#FF498C51">4</TextBlock>
+                </WrapPanel>
+            </WrapPanel>
+            <TextBox Name="tbCapha" Width="200" />
+            <Button Name="BtnCheck" Width="100" Height="25" Content="Ок" Click="BtnSignIn_Click"/>
+        </WrapPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qflZmKbeT2hRHHfyZ7TgXIt+FDXumxf+QS68ng+QxpHZadfnBuxk7vnoCGFFPp7ygWQVxGHKABuBgIV/646wUQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kruto\\source\\repos\\Fabric_Desktop\\Fabric_Desktop\\Fabric_Desktop.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kruto\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
+    "C:\\Users\\kruto\\.nuget\\packages\\entityframework.ru\\6.2.0\\entityframework.ru.6.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

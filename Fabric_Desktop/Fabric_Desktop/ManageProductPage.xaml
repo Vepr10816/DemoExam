@@ -1,0 +1,37 @@
+﻿<Page x:Class="Fabric_Desktop.ManageProductPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Fabric_Desktop"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ManageProductPage">
+
+    <Grid>
+        <WrapPanel Orientation="Vertical" Width="300" HorizontalAlignment="Left">
+            <Label Content="Артикул"/>
+            <TextBox Name="tbArticleProduct" Text="{Binding ProductArticleNumber}"/>
+            <Label Content="Название"/>
+            <TextBox Name="tbName" Text="{Binding ProductName}"/>
+            <Label Content="Описание"/>
+            <RichTextBox Name="rtfDescription" Height="100"/>
+            <Label Content="Категория"/>
+            <TextBox Name="tbCategory" Text="{Binding ProductCategory}"/>
+            <Label Content="Производитель"/>
+            <TextBox Name="tbManufacturer" Text="{Binding ProductManufacturer}"/>
+            <Label Content="Количество на складе"/>
+            <TextBox Name="tbQuantyty" Text="{Binding ProductQuantityInStock}"/>
+            <Label Content="Цена"/>
+            <TextBox Name="tbCoast" Text="{Binding ProductCost}"/>
+            <Button Name="BtnManageProduct" Content="Добавить" Click="BtnManageProduct_Click"/>
+        </WrapPanel>
+
+        <WrapPanel Orientation="Vertical"  HorizontalAlignment="Right">
+            <Label Content="Фото товара" />
+            <Grid>
+                <Image Source="{Binding ProductPhoto}" Width="450" Name="imgProduct" MouseDown="ImgProduct_MouseDown"/>
+            </Grid>
+        </WrapPanel>
+    </Grid>
+</Page>
