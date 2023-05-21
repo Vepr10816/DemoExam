@@ -1,0 +1,6 @@
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib\bin\Debug\SF2022User{05}Lib.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib\bin\Debug\SF2022User{05}Lib.pdb
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib\obj\Debug\SF2022User{05}Lib.csprojAssemblyReference.cache
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib\obj\Debug\SF2022User{05}Lib.csproj.CoreCompileInputs.cache
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib\obj\Debug\SF2022User{05}Lib.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib\obj\Debug\SF2022User{05}Lib.pdb

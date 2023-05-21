@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CZlLpBcD0dxIdrtf9evkbWAPCBplDoNlYs+YHf8f3SbjbjoJdUtSTPQ8OrmeE8kEwFbjPJ8BBtrc3VJ/5n3gzg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kruto\\source\\repos\\SF2022User{05}Lib\\SF2022User{05}Lib.Tests\\SF2022User{05}Lib.Tests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kruto\\.nuget\\packages\\mstest.testadapter\\2.1.1\\mstest.testadapter.2.1.1.nupkg.sha512",
+    "C:\\Users\\kruto\\.nuget\\packages\\mstest.testframework\\2.1.1\\mstest.testframework.2.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

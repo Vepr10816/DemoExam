@@ -1,0 +1,359 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "MSTest.TestAdapter/2.1.1": {
+        "type": "package",
+        "build": {
+          "build/net45/MSTest.TestAdapter.props": {},
+          "build/net45/MSTest.TestAdapter.targets": {}
+        }
+      },
+      "MSTest.TestFramework/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {},
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {},
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
+        }
+      },
+      "SF2022User{05}Lib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SF2022User{05}Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SF2022User{05}Lib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "MSTest.TestAdapter/2.1.1": {
+        "type": "package",
+        "build": {
+          "build/net45/MSTest.TestAdapter.props": {},
+          "build/net45/MSTest.TestAdapter.targets": {}
+        }
+      },
+      "MSTest.TestFramework/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {},
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {},
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
+        }
+      },
+      "SF2022User{05}Lib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SF2022User{05}Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SF2022User{05}Lib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "MSTest.TestAdapter/2.1.1": {
+        "type": "package",
+        "build": {
+          "build/net45/MSTest.TestAdapter.props": {},
+          "build/net45/MSTest.TestAdapter.targets": {}
+        }
+      },
+      "MSTest.TestFramework/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {},
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {},
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
+        }
+      },
+      "SF2022User{05}Lib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SF2022User{05}Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SF2022User{05}Lib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "MSTest.TestAdapter/2.1.1": {
+        "type": "package",
+        "build": {
+          "build/net45/MSTest.TestAdapter.props": {},
+          "build/net45/MSTest.TestAdapter.targets": {}
+        }
+      },
+      "MSTest.TestFramework/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {},
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {},
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
+        }
+      },
+      "SF2022User{05}Lib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SF2022User{05}Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SF2022User{05}Lib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MSTest.TestAdapter/2.1.1": {
+      "sha512": "913cbQHPnGOCCYJKPDqcjI1IbPkugHOiheuSmd5m4LKLdXJbKJX1AxUu7F7uAMxCNdtLA34ZOgFe5WNDcWhY2Q==",
+      "type": "package",
+      "path": "mstest.testadapter/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/_common/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll",
+        "build/_common/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll",
+        "build/_common/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll",
+        "build/_common/Microsoft.VisualStudio.TestPlatform.TestFramework.dll",
+        "build/_common/cs/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/cs/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/_common/de/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/de/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/de/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/_common/es/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/es/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/es/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/_common/fr/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/fr/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/_common/it/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/it/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/it/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/_common/ja/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/ja/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/_common/ko/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/ko/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/_common/pl/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/pl/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/_common/pt/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/pt/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/_common/ru/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/ru/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/_common/tr/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/tr/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/_common/zh-Hans/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/zh-Hans/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/_common/zh-Hant/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll",
+        "build/_common/zh-Hant/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll",
+        "build/_common/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "build/net45/MSTest.TestAdapter.props",
+        "build/net45/MSTest.TestAdapter.targets",
+        "build/netcoreapp1.0/MSTest.TestAdapter.props",
+        "build/netcoreapp1.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll",
+        "build/uap10.0/MSTest.TestAdapter.props",
+        "build/uap10.0/MSTest.TestAdapter.targets",
+        "build/uap10.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll",
+        "mstest.testadapter.2.1.1.nupkg.sha512",
+        "mstest.testadapter.nuspec"
+      ]
+    },
+    "MSTest.TestFramework/2.1.1": {
+      "sha512": "lS552ma6LxHf7aOTNQHJa4udC3KVml+Hlzs3cEJP/caIUc6UvYMmmaPpYO3ErEL9qF4xGayeHXwAmrTiFWUAMw==",
+      "type": "package",
+      "path": "mstest.testframework/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML",
+        "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll",
+        "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.XML",
+        "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll",
+        "lib/net45/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net45/de/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/de/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net45/es/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/es/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net45/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net45/it/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/it/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net45/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net45/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net45/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net45/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net45/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net45/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net45/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net45/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net45/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML",
+        "lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll",
+        "lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.TestFramework.XML",
+        "lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll",
+        "lib/netstandard1.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML",
+        "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll",
+        "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.XML",
+        "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll",
+        "lib/uap10.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "mstest.testframework.2.1.1.nupkg.sha512",
+        "mstest.testframework.nuspec"
+      ]
+    },
+    "SF2022User{05}Lib/1.0.0": {
+      "type": "project",
+      "path": "../SF2022User{05}Lib/SF2022User{05}Lib.csproj",
+      "msbuildProject": "../SF2022User{05}Lib/SF2022User{05}Lib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "MSTest.TestAdapter >= 2.1.1",
+      "MSTest.TestFramework >= 2.1.1",
+      "SF2022User{05}Lib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kruto\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\kruto\\source\\repos\\SF2022User{05}Lib\\SF2022User{05}Lib.Tests\\SF2022User{05}Lib.Tests.csproj",
+      "projectName": "SF2022User{05}Lib.Tests",
+      "projectPath": "C:\\Users\\kruto\\source\\repos\\SF2022User{05}Lib\\SF2022User{05}Lib.Tests\\SF2022User{05}Lib.Tests.csproj",
+      "packagesPath": "C:\\Users\\kruto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kruto\\source\\repos\\SF2022User{05}Lib\\SF2022User{05}Lib.Tests\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\kruto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {
+            "C:\\Users\\kruto\\source\\repos\\SF2022User{05}Lib\\SF2022User{05}Lib\\SF2022User{05}Lib.csproj": {
+              "projectPath": "C:\\Users\\kruto\\source\\repos\\SF2022User{05}Lib\\SF2022User{05}Lib\\SF2022User{05}Lib.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "MSTest.TestAdapter": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "MSTest.TestFramework": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

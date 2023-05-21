@@ -1,0 +1,17 @@
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\bin\Debug\SF2022User{05}Lib.Tests.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\bin\Debug\SF2022User{05}Lib.Tests.pdb
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\bin\Debug\SF2022User{05}Lib.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\bin\Debug\SF2022User{05}Lib.pdb
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\obj\Debug\SF2022User{05}Lib.Tests.csprojAssemblyReference.cache
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\obj\Debug\SF2022User{05}Lib.Tests.csproj.CoreCompileInputs.cache
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\obj\Debug\SF2022User{05}Lib.Tests.csproj.CopyComplete
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\obj\Debug\SF2022User{05}Lib.Tests.dll
+C:\Users\kruto\source\repos\SF2022User{05}Lib\SF2022User{05}Lib.Tests\obj\Debug\SF2022User{05}Lib.Tests.pdb
