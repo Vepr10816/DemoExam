@@ -1,6 +1,8 @@
-﻿using Microsoft.Win32;
+﻿using Fabric_Desktop.Utilities;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,74 +23,67 @@ namespace Fabric_Desktop
     /// </summary>
     public partial class ManageProductPage : Page
     {
-        private static string _imgPath = "";
+        private Product Product { get; }
+        private DataGrid DataGrid { get; }
 
-        private Product _currentProduct;
-        private ProductPage _productPage;
-        public ManageProductPage(Product product, ProductPage productPage)
+        private string PhotoPath { get; set; }
+        private string PhotoName { get; set; }
+        public ManageProductPage(Product product, DataGrid dataGrid)
         {
             InitializeComponent();
-            _currentProduct = product;
-            rtfDescription.AppendText(_currentProduct.ProductDescription);
-            DataContext = _currentProduct;
-            BtnManageProduct.Content = "Редактировать";
-            _productPage = productPage;
+            Product = product;
+            DataGrid = dataGrid;
+            DataContext = Product;
         }
 
-        public ManageProductPage(ProductPage productPage)
-        {
-            InitializeComponent();
-            _currentProduct = new Product();
-            BtnManageProduct.Content = "Добавить";
-            _productPage = productPage;
-            DataContext = _currentProduct;
-        }
         private void ImgProduct_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            OpenFileDialog dialog = new OpenFileDialog()
+            OpenFileDialog openFileDialog = new OpenFileDialog()
             {
                 Filter = "Image Files| *.jpg; *.jpeg; *.png"
             };
-            dialog.Title = "Choose backup file";
-            if (dialog.ShowDialog() == true)
+            openFileDialog.Title = "Загрузите фотографию товара";
+            if(openFileDialog.ShowDialog() == true)
             {
-                imgProduct.Source = new BitmapImage(new Uri(dialog.FileName));
-                _imgPath = dialog.SafeFileName;
+                ImgProduct.Source = new BitmapImage(new Uri(openFileDialog.FileName));
+                Product.ProductPhoto = openFileDialog.SafeFileName;
+                PhotoPath = openFileDialog.FileName;
+                PhotoName = openFileDialog.SafeFileName;
             }
+
         }
 
-        private bool CheckTextBox(List<TextBox> textBoxList)
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
-            if (textBoxList.Where(p => string.IsNullOrEmpty(p.Text) == true).ToList().Count() > 0)
+            if(CheckTextboxes(new List<TextBox>() { TbArticle, TbCategory, TbDescription, TbManufacturer, TbProductName, TbQuantity, TbСost}) == false)
             {
-                MessageBox.Show("Все данные должны быть заполнены");
-                return false;
-            }
-            return true;
-        }
-
-        private void BtnManageProduct_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckTextBox(new List<TextBox> { tbArticleProduct, tbCategory, tbCoast, tbManufacturer, tbName, tbQuantyty }) == false)
-            {
-                MessageBox.Show("Все поля обязательны к заполнению!!!!!!!!!!!!!!!!!");
+                MessageBox.Show("Все поля должны быть заполнены!");
                 return;
             }
+            if (BaseModel.GetContext().Products.Where(p => p.ProductArticleNumber == Product.ProductArticleNumber).ToList().Count() == 0)
+                BaseModel.GetContext().Products.Add(Product);
             try
             {
-                _currentProduct.ProductDescription = new TextRange(rtfDescription.Document.ContentStart, rtfDescription.Document.ContentEnd).Text;
-                if (TradeEntities.GetContext().Product.ToList().Where(p => p == _currentProduct).ToList().Count == 0)
-                    TradeEntities.GetContext().Product.Add(_currentProduct);
-                TradeEntities.GetContext().SaveChanges();
-                _productPage.UpdateDataGrid(TradeEntities.GetContext().Product.ToList());
+                BaseModel.GetContext().SaveChanges();
+                if(PhotoPath != null)
+                    File.Copy(PhotoPath, Directory.GetParent(Directory.GetParent(Environment.CurrentDirectory).ToString()) + $@"\Resources\{PhotoName}");
+                DataGrid.ItemsSource = BaseModel.GetContext().Products.ToList();
                 FrameManager.MainFrame.GoBack();
-
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Неверный тип данных\n" + ex.ToString());
+                MessageBox.Show("Ошибка ввода данных\n" + ex);
             }
+        }
 
+        private bool CheckTextboxes(List<TextBox> textBoxes)
+        {
+            foreach(TextBox textBox in textBoxes)
+            {
+                if (string.IsNullOrWhiteSpace(textBox.Text))
+                    return false;
+            }
+            return true;
         }
     }
 }

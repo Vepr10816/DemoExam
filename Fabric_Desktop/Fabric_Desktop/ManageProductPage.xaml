@@ -9,29 +9,34 @@
       Title="ManageProductPage">
 
     <Grid>
-        <WrapPanel Orientation="Vertical" Width="300" HorizontalAlignment="Left">
-            <Label Content="Артикул"/>
-            <TextBox Name="tbArticleProduct" Text="{Binding ProductArticleNumber}"/>
-            <Label Content="Название"/>
-            <TextBox Name="tbName" Text="{Binding ProductName}"/>
-            <Label Content="Описание"/>
-            <RichTextBox Name="rtfDescription" Height="100"/>
-            <Label Content="Категория"/>
-            <TextBox Name="tbCategory" Text="{Binding ProductCategory}"/>
-            <Label Content="Производитель"/>
-            <TextBox Name="tbManufacturer" Text="{Binding ProductManufacturer}"/>
-            <Label Content="Количество на складе"/>
-            <TextBox Name="tbQuantyty" Text="{Binding ProductQuantityInStock}"/>
-            <Label Content="Цена"/>
-            <TextBox Name="tbCoast" Text="{Binding ProductCost}"/>
-            <Button Name="BtnManageProduct" Content="Добавить" Click="BtnManageProduct_Click"/>
-        </WrapPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-        <WrapPanel Orientation="Vertical"  HorizontalAlignment="Right">
-            <Label Content="Фото товара" />
-            <Grid>
-                <Image Source="{Binding ProductPhoto}" Width="450" Name="imgProduct" MouseDown="ImgProduct_MouseDown"/>
-            </Grid>
+        <WrapPanel Grid.Row="1" Orientation="Vertical" Grid.Column="0">
+            <Label Content="Артикул"/>
+            <TextBox Name="TbArticle" Width="200" Text="{Binding ProductArticleNumber}"/>
+            <Label Content="Наименование"/>
+            <TextBox Name="TbProductName" Width="200" Text="{Binding ProductName}"/>
+            <Label Content="Описание"/>
+            <TextBox Name="TbDescription" TextWrapping="Wrap" Height="100" Text="{Binding ProductDescription}"/>
+            <Label Content="Категория"/>
+            <TextBox Name="TbCategory" Text="{Binding ProductCategory}"/>
+            <Label Content="Поставщик"/>
+            <TextBox Name="TbManufacturer" Text="{Binding ProductManufacturer}"/>
+            <Label Content="Количество"/>
+            <TextBox Name="TbQuantity" Text="{Binding ProductQuantityInStock}"/>
+            <Label Content="Цена"/>
+            <TextBox Name="TbСost" Text="{Binding ProductCost}"/>
+            <Label/>
+            <Button Name="BtnSave" Content="Сохранить" Click="BtnSave_Click"/>
         </WrapPanel>
+        <Image Source="{Binding ProductPhoto}" Name="ImgProduct" MouseDown="ImgProduct_MouseDown" Grid.Column="1" Grid.Row="1"/>
     </Grid>
 </Page>

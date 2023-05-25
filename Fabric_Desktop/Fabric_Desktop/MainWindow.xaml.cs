@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Fabric_Desktop.Utilities;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,34 +25,36 @@ namespace Fabric_Desktop
         public MainWindow()
         {
             InitializeComponent();
+            MessageBox.Show(Directory.GetParent(Directory.GetParent(Environment.CurrentDirectory).ToString()) + $@"\Resources\123.png");
             FrameManager.MainFrame = MainFrame;
-            MainFrame.Navigate(new Authorization());
-        }
-
-        private void BtnBack_Click(object sender, RoutedEventArgs e)
-        {
-            if(FrameManager.MainFrame.CanGoBack)
-                FrameManager.MainFrame.GoBack();
+            MainFrame.Navigate(new ProductPage(1));
         }
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
         {
-            if (((Page)MainFrame.Content).Title.ToString() == "Authorization")
+            if(((Page)MainFrame.Content).Title.ToString() == "Авторизация")
             {
-                PageName.Content = "Авторизация";
                 BtnBack.Visibility = Visibility.Hidden;
+                LbHeader.Content = "Авторизация";
             }
+
             if (((Page)MainFrame.Content).Title.ToString() == "ProductPage")
             {
-                PageName.Content = "Каталог";
-                BtnBack.Content = "Выйти";
                 BtnBack.Visibility = Visibility.Visible;
+                BtnBack.Content = "Выйти";
+                LbHeader.Content = "Товары";
             }
             if (((Page)MainFrame.Content).Title.ToString() == "ManageProductPage")
             {
-                PageName.Content = "Менеджмент товаров";
                 BtnBack.Content = "Назад";
+                LbHeader.Content = "Менеджмент товара";
             }
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainFrame.CanGoBack)
+                MainFrame.GoBack();
         }
     }
 }

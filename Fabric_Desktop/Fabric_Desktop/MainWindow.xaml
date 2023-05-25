@@ -5,20 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Fabric_Desktop"
         mc:Ignorable="d"
-        Title="Fabric Desktop" Height="650" Width="800" MinHeight="550" MinWidth="800"
-        Icon="/Resources/icon.ico">
+        Title="ООО Ткани" Height="450" Width="800" MinWidth="800" MinHeight="450" Icon="Resources/icon.ico">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="55"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
-        <Image Source="/Resources/logo.png" Grid.Row="0" HorizontalAlignment="Right"/>
-        <Label Name="PageName" Content="Header" FontWeight="Bold" FontSize="35" HorizontalAlignment="Center" FontFamily="Comic Sans MS" Foreground="Black"/>
-        <Button Name="BtnBack" Content="Назад" HorizontalAlignment="Left" Width="80" Height="40" VerticalAlignment="Center" Background="#FF498C51" Click="BtnBack_Click"/>
-        <Grid Grid.Row="2" Background="#FF76E383"/>
+        <Button Click="BtnBack_Click" Content="Выход" Grid.Row="0" HorizontalAlignment="Left" Name="BtnBack" Width="70" Height="30"/>
+        <Label Foreground="Black" Name="LbHeader" Content="Header" HorizontalAlignment="Center" FontWeight="Bold" FontSize="30"/>
+        <Image Source="Resources/logo.png" HorizontalAlignment="Right" Name="ImgLogo"/>
+        <Label Foreground="Black" Content="ФИО" HorizontalAlignment="Right" Visibility="Hidden" FontSize="15" Name="LbUser"/>
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" Grid.Row="1"/>
         <Grid Grid.Row="0" Background="#FF76E383" Panel.ZIndex="-2"/>
-        <Frame Grid.Row="1" Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

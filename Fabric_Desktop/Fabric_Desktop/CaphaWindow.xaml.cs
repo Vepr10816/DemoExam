@@ -19,44 +19,43 @@ namespace Fabric_Desktop
     /// </summary>
     public partial class CaphaWindow : Window
     {
-        Authorization _authorization;
+        AuthorizationPage Authorization { get; }
         bool canClose = false;
-        public CaphaWindow(Authorization authorization)
+        public CaphaWindow(AuthorizationPage authorization)
         {
             InitializeComponent();
-            _authorization = authorization;
-            LoadCapha();
+            Authorization = authorization;
+            GenerateCapha();
         }
 
-        public void LoadCapha()
+        private void GenerateCapha()
         {
-            string capchaLetters = "qwertyuiopasdfghjklzxcvbnm1234567890";
-            char[] array = capchaLetters.ToCharArray();
-            Random random = new Random();
-            tblFirstLetter.Text = array[random.Next(0, capchaLetters.Count())].ToString();
-            tblSecondLetter.Text = array[random.Next(0, capchaLetters.Count())].ToString();
-            tblThirdLetter.Text = array[random.Next(0, capchaLetters.Count())].ToString();
-            tblFourthLetter.Text = array[random.Next(0, capchaLetters.Count())].ToString();
+            string lettersCapha = "1234567890qwertyuiopasdfghjklzxcvbnm";
+            char[] capchaArray = lettersCapha.ToCharArray();
+            Random rnd = new Random();
+            TbOne.Text = capchaArray[rnd.Next(0, capchaArray.Count())].ToString();
+            TbTwo.Text = capchaArray[rnd.Next(0, capchaArray.Count())].ToString();
+            TbThree.Text = capchaArray[rnd.Next(0, capchaArray.Count())].ToString();
+            TbFour.Text = capchaArray[rnd.Next(0, capchaArray.Count())].ToString();
         }
-
-        private void BtnSignIn_Click(object sender, RoutedEventArgs e)
+        private void BtnCheckCapha_Click(object sender, RoutedEventArgs e)
         {
-            if (tbCapha.Text == tblFirstLetter.Text + tblSecondLetter.Text + tblThirdLetter.Text + tblFourthLetter.Text)
+            if (TbUserCapcha.Text == $@"{TbOne.Text}{TbTwo.Text}{TbThree.Text}{TbFour.Text}")
             {
-                _authorization.IsEnabled = true;
+                Authorization.IsEnabled = true;
                 canClose = true;
                 this.Close();
             }
             else
             {
                 MessageBox.Show("Неверный ввод");
-                LoadCapha();
+                GenerateCapha();
             }
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if(canClose == false)
+            if (canClose == false)
                 e.Cancel = true;
         }
     }

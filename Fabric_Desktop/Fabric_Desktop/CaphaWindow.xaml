@@ -7,22 +7,30 @@
         mc:Ignorable="d"
         Title="CaphaWindow" Height="450" Width="800" Closing="Window_Closing">
     <Grid>
-        <WrapPanel HorizontalAlignment="Center" Height="150"  VerticalAlignment="Center" Width="200" Orientation="Vertical">
-            <Label Content="Повторите надпись на картинке" Width="200"/>
-            <WrapPanel Orientation="Horizontal" Height="40">
-                <TextBlock TextDecorations="Strikethrough" Width="30" Height="40" Name="tblFirstLetter" Foreground="#FF498C51">1</TextBlock>
-                    <WrapPanel Orientation="Vertical" Height="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Введите текст с картинки" HorizontalAlignment="Center" FontSize="30" />
+
+        <WrapPanel Orientation="Vertical" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <WrapPanel Orientation="Horizontal">
+                <TextBlock Name="TbOne" Text="1" Foreground="#FF76E383" TextDecorations="Strikethrough" FontSize="30"/>
+                <WrapPanel Orientation="Vertical">
                     <Label/>
-                    <TextBlock TextDecorations="Strikethrough" Width="30" Height="40" Name="tblSecondLetter" Foreground="#FF498C51">2</TextBlock>
+                    <TextBlock Name="TbTwo" Text="2" Foreground="#FF76E383" TextDecorations="Strikethrough" FontSize="30"/>
                 </WrapPanel>
-                <TextBlock TextDecorations="Strikethrough" Width="30" Height="40" Name="tblThirdLetter" Foreground="#FF498C51">3</TextBlock>
-                <WrapPanel Orientation="Vertical" Height="30">
+                <TextBlock Name="TbThree" Text="3" Foreground="#FF76E383" TextDecorations="Strikethrough" FontSize="30"/>
+                <WrapPanel Orientation="Vertical">
                     <Label/>
-                    <TextBlock TextDecorations="Strikethrough" Width="30" Height="40" Name="tblFourthLetter" Foreground="#FF498C51">4</TextBlock>
+                    <TextBlock Name="TbFour" Text="4" Foreground="#FF76E383" TextDecorations="Strikethrough" FontSize="30"/>
                 </WrapPanel>
             </WrapPanel>
-            <TextBox Name="tbCapha" Width="200" />
-            <Button Name="BtnCheck" Width="100" Height="25" Content="Ок" Click="BtnSignIn_Click"/>
+            <TextBox Name="TbUserCapcha" Width="100"/>
+            <Button Name="BtnCheckCapha" Content="Готово" Click="BtnCheckCapha_Click"/>
+
         </WrapPanel>
 
     </Grid>

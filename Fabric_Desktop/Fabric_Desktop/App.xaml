@@ -5,17 +5,15 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
             <Setter Property="Foreground" Value="#FF498C51"/>
-            <Setter Property="FontFamily" Value="Comic Sans MS"/>
         </Style>
-        
-        <Style TargetType="Button">
-            <Setter Property="Background" Value="#FF76E383"/>
-            <Setter Property="FontFamily" Value="Comic Sans MS"/>
-        </Style>
-
         <Style TargetType="TextBox">
             <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="Foreground" Value="#FF76E383"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FF498C51"/>
         </Style>
     </Application.Resources>
 </Application>

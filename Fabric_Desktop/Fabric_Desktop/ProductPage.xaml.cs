@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fabric_Desktop.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,116 +21,73 @@ namespace Fabric_Desktop
     /// </summary>
     public partial class ProductPage : Page
     {
-        public ProductPage(int roleID)
+        private int UserId{get;}
+
+        public ProductPage(int userId)
         {
             InitializeComponent();
-            if(roleID == 1)
+            UserId = userId;
+            if (userId == 1)
             {
-                AddButtonColumn("Редактирование", "BtnUpdProduct", "Редактировать", BtnUpdProduct_Click);
-                AddButtonColumn("Удаление", "BtnDelProduct", "Удалить", BtnDelProduct_Click);
                 BtnAddProduct.Visibility = Visibility.Visible;
+                DgProduct.Columns[DgProduct.Columns.Count-1].Visibility = Visibility.Visible;
             }
-            UpdateDataGrid(TradeEntities.GetContext().Product.ToList());
-            
-        }
-
-        public void UpdateDataGrid(List<Product> productList)
-        {
-            dgProduct.ItemsSource = productList;
-            lbQuantityProduct.Content = $@"{productList.Count()} из {productList.Count()}";
-            List<string> manufacturerList = new List<string>();
-            foreach (var product in productList)
+            List<Product> productList = BaseModel.GetContext().Products.ToList();
+            DgProduct.ItemsSource = productList;
+            List<string> manafacturerList = new List<string>();
+            foreach(Product product in productList)
             {
-                if (!manufacturerList.Contains(product.ProductManufacturer))
-                    manufacturerList.Add(product.ProductManufacturer);
+                if (!manafacturerList.Contains(product.ProductManufacturer))
+                    manafacturerList.Add(product.ProductManufacturer);
             }
-            CbManufacturer.ItemsSource = manufacturerList;
+            CbManufacturer.ItemsSource = manafacturerList;
         }
 
-        private void ProductFilter()
+        private void FilterProducts()
         {
-            List<Product> productList = TradeEntities.GetContext().Product.ToList();
-            lbQuantityProduct.Content = $@" из {productList.Count()}";
-            if (string.IsNullOrEmpty(TbSearch.Text) && CbManufacturer.SelectedIndex != -1)
-                productList = productList.Where(p => p.ProductManufacturer == CbManufacturer.SelectedValue.ToString()).ToList();
-            else if (!string.IsNullOrEmpty(TbSearch.Text) && CbManufacturer.SelectedIndex == -1)
-                productList = productList.Where(
-                                p => p.ProductName.ToLower().Contains(TbSearch.Text.ToLower()) ||
-                                p.ProductDescription.ToLower().Contains(TbSearch.Text.ToLower()) ||
-                                p.ProductCategory.ToLower().Contains(TbSearch.Text.ToLower()) ||
-                                p.ProductCost.ToString().ToLower().Contains(TbSearch.Text.ToLower())
-                                ).ToList();
-            else if(!string.IsNullOrEmpty(TbSearch.Text) && CbManufacturer.SelectedIndex != -1)
+            List<Product> productList = BaseModel.GetContext().Products.ToList();
+            if (string.IsNullOrWhiteSpace(TbSearch.Text) == true && CbManufacturer.SelectedIndex != -1)
+                productList = productList.Where(p => p.ProductManufacturer == CbManufacturer.Text).ToList();
+            else if (CbManufacturer.SelectedIndex == -1 && string.IsNullOrWhiteSpace(TbSearch.Text) == false)
+                productList = productList.Where(p => p.ProductName.Contains(TbSearch.Text) ||
+                                                        p.ProductDescription.Contains(TbSearch.Text) || p.ProductCategory.Contains(TbSearch.Text)).ToList();
+            else if (CbManufacturer.SelectedIndex != -1 && string.IsNullOrWhiteSpace(TbSearch.Text) == false)
             {
-                productList = productList.Where(p => p.ProductManufacturer == CbManufacturer.SelectedValue.ToString()).ToList();
-                productList = productList.Where(
-                                p => p.ProductName.ToLower().Contains(TbSearch.Text.ToLower()) ||
-                                p.ProductDescription.ToLower().Contains(TbSearch.Text.ToLower()) ||
-                                p.ProductCategory.ToLower().Contains(TbSearch.Text.ToLower()) ||
-                                p.ProductCost.ToString().ToLower().Contains(TbSearch.Text.ToLower())
-                                ).ToList();
+                productList = productList = productList.Where(p => p.ProductManufacturer == CbManufacturer.Text).ToList();
+                productList = productList.Where(p => p.ProductName.Contains(TbSearch.Text) ||
+                                                        p.ProductDescription.Contains(TbSearch.Text) || p.ProductCategory.Contains(TbSearch.Text)).ToList();
             }
-            lbQuantityProduct.Content = productList.Count.ToString() + lbQuantityProduct.Content;
-            dgProduct.ItemsSource = productList;
+
+            DgProduct.ItemsSource = productList;
+
         }
-
-        private void AddButtonColumn(string header, string buttonName, string buttonContent, RoutedEventHandler routedEventHandler)
-        {
-            DataTemplate cellTemplate = new DataTemplate();
-            FrameworkElementFactory buttonFactory = new FrameworkElementFactory(typeof(Button));
-            buttonFactory.SetValue(Button.ContentProperty, buttonContent);
-            buttonFactory.SetValue(Button.NameProperty, buttonName);
-            buttonFactory.AddHandler(Button.ClickEvent, new RoutedEventHandler(routedEventHandler));
-            cellTemplate.VisualTree = buttonFactory;
-
-            DataGridTemplateColumn columnUpdateProduct = new DataGridTemplateColumn
-            {
-                Header = header,
-                CellTemplate = cellTemplate
-            };
-            dgProduct.Columns.Add(columnUpdateProduct);
-        }
-
         private void TbSearch_TextChanged(object sender, TextChangedEventArgs e)
         {
-            ProductFilter();
+            FilterProducts();
         }
 
         private void CbManufacturer_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ProductFilter();
-        }
-
-        private void BtnUpdProduct_Click(object sender, RoutedEventArgs e)
-        {
-            if (dgProduct.SelectedIndex != -1)
-            {
-                FrameManager.MainFrame.Navigate(new ManageProductPage((Product)dgProduct.SelectedItem, this));
-            }
-        }
-
-        private void BtnDelProduct_Click(object sender, RoutedEventArgs e)
-        {
-            Product product = (Product)dgProduct.SelectedItem;
-            if (TradeEntities.GetContext().OrderProduct.ToList().Where(p => p.ProductArticleNumber == product.ProductArticleNumber).ToList().Count == 0)
-            {
-                TradeEntities.GetContext().Product.Remove(product);
-                try
-                {
-
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show("Ошибка\n" + ex.ToString());
-                }
-            }
-            else
-                MessageBox.Show("Нельзя удалить товар т.к. он находится в заказе");
+            FilterProducts();
         }
 
         private void BtnAddProduct_Click(object sender, RoutedEventArgs e)
         {
-            FrameManager.MainFrame.Navigate(new ManageProductPage(this));
+            FrameManager.MainFrame.Navigate(new ManageProductPage(new Product(), DgProduct));
+        }
+
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            BaseModel.GetContext().Products.Remove((Product)DgProduct.SelectedItem);
+            DgProduct.ItemsSource = BaseModel.GetContext().Products.ToList();
+            BaseModel.GetContext().SaveChanges();
+        }
+
+        private void DgProduct_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (UserId == 1)
+                FrameManager.MainFrame.Navigate(new ManageProductPage((Product)DgProduct.SelectedItem, DgProduct));
         }
     }
 }

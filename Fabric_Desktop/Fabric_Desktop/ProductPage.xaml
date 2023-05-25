@@ -8,58 +8,55 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ProductPage">
 
-    <Page.Resources>
-        <Style TargetType="{x:Type DataGridRow}">
-            <Style.Triggers>
-                <DataTrigger Binding="{Binding ProductQuantityInStock}" Value="0">
-                    <Setter Property="Background" Value="Gray" />
-                </DataTrigger>
-            </Style.Triggers>
-        </Style>
-    </Page.Resources>
-
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="55"/>
+            <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="35"/>
         </Grid.RowDefinitions>
-        <WrapPanel HorizontalAlignment="Left" Width="200" Orientation="Vertical">
-            <Label Content="Поиск"/>
-            <TextBox Name="TbSearch" Width="200" TextChanged="TbSearch_TextChanged"/>
-        </WrapPanel>
-        <WrapPanel HorizontalAlignment="Center" Width="200" Orientation="Vertical">
-            <Label Content="Производитель"/>
-            <ComboBox Name="CbManufacturer" SelectionChanged="CbManufacturer_SelectionChanged" Width="200"/>
-        </WrapPanel>
-        <WrapPanel HorizontalAlignment="Right"  Width="200" Orientation="Vertical">
-            <Label Content="Количество"/>
-            <Label Name="lbQuantityProduct"/>
-        </WrapPanel>
-        <DataGrid Name="dgProduct" AutoGenerateColumns="False" Grid.Row="1" SelectedItem="{Binding Path=SelectedProduct, Mode=TwoWay}">
+
+        <DataGrid Grid.Row="1" AutoGenerateColumns="False" Name="DgProduct" CanUserAddRows="False" SelectedItem="{Binding Path=SelectedProduct, Mode=TwoWay}" MouseDoubleClick="DgProduct_MouseDoubleClick">
             <DataGrid.Columns>
-                <DataGridTemplateColumn Header="Фото" Width="*">
+                <DataGridTemplateColumn Width="*" Header="Фото">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Image Source="{Binding ProductPhoto}" Height="200" Width="300"/>
+                            <Image Source="{Binding ProductPhoto}"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTemplateColumn Header="Информаия" Width="*">
+                
+                <DataGridTemplateColumn Width="*" Header="Информация о товаре">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <WrapPanel Orientation="Vertical" Height="200" Width="300">
-                                <Label Content="{Binding ProductName}" Height="50" Width="300"/>
-                                <TextBlock TextWrapping="Wrap" Text="{Binding ProductDescription}" Height="50" Width="300" Foreground="#FF498C51" FontFamily="Comic Sans MS"/>
-                                <Label Content="{Binding ProductManufacturer}" Height="50" Width="300"/>
-                                <Label Content="{Binding ProductCost}" Height="50" Width="300"/>
+                            <WrapPanel Orientation="Vertical">
+                                <Label Content="{Binding ProductName}"/>
+                                <Label Content="{Binding ProductDescription}"/>
+                                <Label Content="{Binding ProductManufacturer}"/>
+                                <Label Content="{Binding ProductCost}"/>
                             </WrapPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn Header="Колиество на складе" Binding="{Binding ProductQuantityInStock}" Width="*" Foreground="#FF498C51" FontFamily="Comic Sans MS"/>
+
+                <DataGridTextColumn Header="Количество на складе" Binding="{Binding ProductQuantityInStock}" Width="*"/>
+
+                <DataGridTemplateColumn Width="*" Header="Удаление" Visibility="Hidden">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Удалить" Name="BtnDelete" Click="BtnDelete_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Grid.Row="2" Content="Добавить" Name="BtnAddProduct" Click="BtnAddProduct_Click" Visibility="Hidden"/>
+
+        <WrapPanel Orientation="Horizontal" Grid.Row="0">
+            <Label Content="Поиск"/>
+                <TextBox Name="TbSearch" TextChanged="TbSearch_TextChanged" Width="200"/>
+            <Label Content="Производитель"/>
+            <ComboBox Name="CbManufacturer" Width="200" SelectionChanged="CbManufacturer_SelectionChanged"/>
+            <Label/>
+            <Button Visibility="Hidden" Name="BtnAddProduct" Click="BtnAddProduct_Click" Width="100" Content="Добавить товар"/>
+        </WrapPanel>
+        
     </Grid>
 </Page>
