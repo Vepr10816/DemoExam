@@ -1,0 +1,29 @@
+﻿<Window x:Class="DemoExam2023.ManageBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoExam2023"
+        mc:Ignorable="d"
+        Title="ManageBookWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Orientation="Vertical" Grid.Column="1">
+            <Label Content="qertyui"/>
+            <Label Content="Название книги"/>
+            <TextBox Name="TbBookName" Width="200" Text="{Binding BookName}"/>
+            <Label Content="Описние книги"/>
+            <TextBox Name="TbBookDescription" Width="200" Height="100" TextWrapping="Wrap" Text="{Binding BookDescription}"/>
+            <Label Content="Количество страниц"/>
+            <TextBox Name="TbPageQuantity" Width="200" TextWrapping="Wrap" Text="{Binding BookPagesQuantity}"/>
+            <Label Content="Автор"/>
+            <ComboBox Name="CbAuthor"/>
+            <Label/>
+            <Button Name="BtnSave" Click="BtnSave_Click" Content="Сохранить"/>
+        </WrapPanel>
+    </Grid>
+</Window>

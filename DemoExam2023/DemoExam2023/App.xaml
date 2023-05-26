@@ -1,0 +1,9 @@
+﻿<Application x:Class="DemoExam2023.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DemoExam2023"
+             StartupUri="AuthorizationWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

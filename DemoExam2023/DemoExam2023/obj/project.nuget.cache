@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "S1H1OEzzb2L6pLliaU1Cm3FKl7fe+vhgeVmK2pzJGSAYYwHgAeiCBhISML5J9ruoHNaI1zOFmkHOmQ3c7Bw39w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kruto\\source\\repos\\DemoExam2023\\DemoExam2023\\DemoExam2023.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kruto\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
+    "C:\\Users\\kruto\\.nuget\\packages\\entityframework.ru\\6.2.0\\entityframework.ru.6.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

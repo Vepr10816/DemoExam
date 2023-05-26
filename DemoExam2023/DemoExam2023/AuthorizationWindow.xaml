@@ -1,0 +1,24 @@
+﻿<Window x:Class="DemoExam2023.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoExam2023"
+        mc:Ignorable="d"
+        Title="AuthorizationWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Orientation="Vertical" Grid.Column="1">
+            <Label Content="Логин"/>
+            <TextBox Name="TbLogin" Width="200"/>
+            <Label Content="Пароль"/>
+            <TextBox Name="TbPassword" Width="200"/>
+            <Label/>
+            <Button Name="BtnAuth" Content="Войти" Click="BtnAuth_Click"/>
+        </WrapPanel>
+    </Grid>
+</Window>
