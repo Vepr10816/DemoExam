@@ -22,3 +22,27 @@ C:\Users\kruto\source\repos\DemoExam2023\DemoExam2023\obj\Debug\ManageBookWindow
 C:\Users\kruto\source\repos\DemoExam2023\DemoExam2023\obj\Debug\ManageBookWindow.baml
 C:\Users\kruto\source\repos\DemoExam2023\DemoExam2023\obj\Debug\AuthorizationWindow.g.cs
 C:\Users\kruto\source\repos\DemoExam2023\DemoExam2023\obj\Debug\AuthorizationWindow.baml
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\bin\Debug\DemoExam2023.exe.config
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\bin\Debug\DemoExam2023.exe
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\bin\Debug\DemoExam2023.pdb
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\bin\Debug\EntityFramework.dll
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\DemoExam2023.csprojAssemblyReference.cache
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\AuthorizationWindow.g.cs
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\MainWindow.g.cs
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\ManageBookWindow.g.cs
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\App.g.cs
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\DemoExam2023_MarkupCompile.cache
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\DemoExam2023_MarkupCompile.lref
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\AuthorizationWindow.baml
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\MainWindow.baml
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\ManageBookWindow.baml
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\DemoExam2023.g.resources
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\DemoExam2023.Properties.Resources.resources
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\DemoExam2023.csproj.GenerateResource.cache
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\DemoExam2023.csproj.CoreCompileInputs.cache
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\DemoExam2023.csproj.CopyComplete
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\DemoExam2023.exe
+C:\Users\kruto\OneDrive\Desktop\Дэмка\Решебник последняя подготовка\DemoExam2023\DemoExam2023\obj\Debug\DemoExam2023.pdb

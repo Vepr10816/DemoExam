@@ -23,7 +23,17 @@
             <ListView.View>
                 <GridView>
                     <GridView.Columns>
-                        <GridViewColumn Header="Наименование книги" DisplayMemberBinding="{Binding BookName}"/>
+                        <GridViewColumn Header="Наименование книги">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <WrapPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding BookName}"/>
+                                        <TextBlock Text="{Binding BookName}"/>
+                                        <TextBlock Text="{Binding BookName}"/>
+                                    </WrapPanel>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
                         <GridViewColumn Header="Описание книги" DisplayMemberBinding="{Binding BookDescription}"/>
                         <GridViewColumn Header="Количество страниц" DisplayMemberBinding="{Binding BookPagesQuantity}"/>
                         <GridViewColumn Header="Автор" DisplayMemberBinding="{Binding Author.AthorLastName}"/>
@@ -31,5 +41,9 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <WrapPanel Orientation="Vertical" Name="wrp">
+            <TextBlock Text="124"/>
+            <TextBlock Text="qwerty"/>
+        </WrapPanel>
     </Grid>
 </Window>

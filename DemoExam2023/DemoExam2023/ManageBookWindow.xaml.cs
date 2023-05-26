@@ -32,24 +32,12 @@ namespace DemoExam2023
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
-            Book.Author = (Author)CbAuthor.SelectedItem;
-            Book.AuthourID = ((Author)CbAuthor.SelectedItem).IDAuthor;
-
-            /*var books = BaseModel.GetContext().Books.Where(x => x.IDBook == Book.IDBook).ToList();
-            int counter = 0;
-            for(int i = 0; i < books.Count(); i++)
-            {
-                if (books[i].IDBook == Book.IDBook)
-                    counter += 1;
-            }
-            if(counter > 0)
-                BaseModel.GetContext().Books.Add(Book);*/
-
-
             if (BaseModel.GetContext().Books.Where(x => x.IDBook == Book.IDBook).ToList().Count == 0)
                 BaseModel.GetContext().Books.Add(Book);
             try
             {
+                Book.Author = (Author)CbAuthor.SelectedItem;
+                Book.AuthourID = ((Author)CbAuthor.SelectedItem).IDAuthor;
                 BaseModel.GetContext().SaveChanges();
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
@@ -60,6 +48,15 @@ namespace DemoExam2023
                 MessageBox.Show("Невернй тип даннх", ex.ToString());
             }
 
+        }
+
+        private void BtnCreatePDF_Click(object sender, RoutedEventArgs e)
+        {
+            PrintDialog printDialog = new PrintDialog();
+            if (printDialog.ShowDialog() == true)
+            {
+                printDialog.PrintVisual(WrpPrintPanel, "Формирование талона");
+            }
         }
     }
 }

@@ -7,12 +7,8 @@
         mc:Ignorable="d"
         Title="ManageBookWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <WrapPanel Orientation="Vertical" Grid.Column="1">
+        
+        <WrapPanel Orientation="Vertical" Name="WrpPrintPanel">
             <Label Content="qertyui"/>
             <Label Content="Название книги"/>
             <TextBox Name="TbBookName" Width="200" Text="{Binding BookName}"/>
@@ -24,6 +20,8 @@
             <ComboBox Name="CbAuthor"/>
             <Label/>
             <Button Name="BtnSave" Click="BtnSave_Click" Content="Сохранить"/>
+            <Label/>
+            <Button Name="BtnCreatePDF" Click="BtnCreatePDF_Click"  Content="Сформировать талон"/>
         </WrapPanel>
     </Grid>
 </Window>

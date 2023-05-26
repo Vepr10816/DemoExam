@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kruto\\source\\repos\\DemoExam2023\\DemoExam2023\\DemoExam2023.csproj",
+      "projectUniqueName": "C:\\Users\\kruto\\OneDrive\\Desktop\\Дэмка\\Решебник последняя подготовка\\DemoExam2023\\DemoExam2023\\DemoExam2023.csproj",
       "projectName": "DemoExam2023",
-      "projectPath": "C:\\Users\\kruto\\source\\repos\\DemoExam2023\\DemoExam2023\\DemoExam2023.csproj",
+      "projectPath": "C:\\Users\\kruto\\OneDrive\\Desktop\\Дэмка\\Решебник последняя подготовка\\DemoExam2023\\DemoExam2023\\DemoExam2023.csproj",
       "packagesPath": "C:\\Users\\kruto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kruto\\source\\repos\\DemoExam2023\\DemoExam2023\\obj\\",
+      "outputPath": "C:\\Users\\kruto\\OneDrive\\Desktop\\Дэмка\\Решебник последняя подготовка\\DemoExam2023\\DemoExam2023\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
